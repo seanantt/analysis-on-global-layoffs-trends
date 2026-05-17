@@ -147,7 +147,7 @@ global-layoffs-2020-2023/
 │   └── cleaning_log.md                ← step-by-step cleaning documentation
 │
 ├── analysis/
-│   └── eda_queries.sql                ← MySQL EDA queries
+│   └── Project 1 - Layoffs EDA.sql    ← MySQL EDA queries
 │
 └── reports/
     ├── figures/
