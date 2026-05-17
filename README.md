@@ -3,7 +3,8 @@
 > Exploratory data analysis of global workforce reductions across 1,995 companies to uncover industry trends, regional patterns, and the economic factors driving mass layoffs.
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Tool](https://img.shields.io/badge/Tool-Google%20Sheets-34A853?logo=googlesheets&logoColor=white)
+![Tool](https://img.shields.io/badge/Tool-MySQL-4479A1?logo=mysql&logoColor=white)
+![Tool](https://img.shields.io/badge/Tool-Power%20BI-F2C811?logo=powerbi&logoColor=black)
 ![Domain](https://img.shields.io/badge/Domain-Workforce%20Analytics-blue)
 ![Period](https://img.shields.io/badge/Data%20Period-2020--2023-orange)
 
@@ -42,16 +43,15 @@ This project aims to answer:
 
 | Tool | Purpose |
 |---|---|
-| **Google Sheets** | Data cleaning, preprocessing & exploratory analysis |
-| **Canva** | Report visualization & presentation storytelling |
-
-🔗 [View Google Sheets (view only)](https://docs.google.com/spreadsheets/d/)
+| **MySQL** | Data cleaning, preprocessing & exploratory data analysis |
+| **Power BI** | Interactive dashboard & data visualization |
+| **Canva** | Presentation storytelling & report design |
 
 ---
 
 ## 🧹 Data Cleaning Summary
 
-Cleaning was performed in Google Sheets prior to analysis. Key steps included:
+Cleaning and preprocessing were performed using **MySQL** prior to visualization. Key steps included:
 
 - Removed duplicate company entries
 - Standardized date formats across all records
@@ -59,7 +59,7 @@ Cleaning was performed in Google Sheets prior to analysis. Key steps included:
 - Filtered out records with no layoff count (both fields null)
 - Standardized country and industry naming conventions
 
-> Full cleaning documentation: [`cleaning/cleaning_log.md`](cleaning/cleaning_log.md)
+> Full cleaning queries: [`cleaning/cleaning_queries.sql`](cleaning/cleaning_queries.sql)
 
 ---
 
@@ -138,13 +138,16 @@ global-layoffs-2020-2023/
 ├── .gitignore
 │
 ├── data/
-│   ├── layoffs_raw.csv            ← original dataset
-│   ├── layoffs_clean.csv          ← cleaned dataset (exported from Google Sheets)
-│   └── data_dictionary.md         ← column descriptions
+│   ├── layoffs_raw.csv                ← original dataset
+│   ├── layoffs_clean.csv              ← cleaned dataset (exported from MySQL)
+│   └── data_dictionary.md             ← column descriptions
 │
 ├── cleaning/
-│   ├── cleaning_log.md            ← step-by-step cleaning documentation
-│   └── google_sheets_link.md      ← view-only Sheets link
+│   ├── cleaning_queries.sql           ← MySQL cleaning queries
+│   └── cleaning_log.md                ← step-by-step cleaning documentation
+│
+├── analysis/
+│   └── eda_queries.sql                ← MySQL EDA queries
 │
 └── reports/
     ├── figures/
@@ -152,6 +155,7 @@ global-layoffs-2020-2023/
     │   ├── layoffs_by_country.png
     │   ├── top_companies_layoffs.png
     │   └── layoff_trend_timeline.png
+    ├── Global_Layoffs_Dashboard.pbix  ← Power BI dashboard file
     └── Global_Layoffs_2020_2023.pdf   ← full presentation deck
 ```
 
