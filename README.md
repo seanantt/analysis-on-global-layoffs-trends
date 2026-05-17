@@ -69,7 +69,7 @@ Cleaning and preprocessing were performed using **MySQL** prior to visualization
 
 Consumer and Retail sectors recorded the highest total layoffs among all industries analyzed. These industries faced major operational adjustments as consumer behavior shifted after the pandemic. Technology-driven industries also experienced significant workforce reductions as growth projections were revised downward.
 
-![Layoffs by Industry](reports/figures/layoffs_by_industry.png)
+![Layoffs by Industry](report/total_layoffs_by_industry.png)
 
 ---
 
@@ -77,7 +77,7 @@ Consumer and Retail sectors recorded the highest total layoffs among all industr
 
 Layoffs affected countries differently. Vietnam and the United Arab Emirates recorded the highest average layoff percentages relative to company workforce size, reflecting the vulnerability of startup-heavy ecosystems to market slowdowns.
 
-![Layoffs by Country](reports/figures/layoffs_by_country.png)
+![Layoffs by Country](report/average_percentage_layoffs.png)
 
 ---
 
@@ -94,7 +94,7 @@ Several global corporations recorded extremely high layoff numbers:
 
 Overhiring during the pandemic contributed heavily to this correction across all four companies.
 
-![Top Companies by Layoffs](reports/figures/top_companies_layoffs.png)
+![Top Companies by Layoffs](report/total_laidoff_by_company.png)
 
 ---
 
@@ -102,7 +102,7 @@ Overhiring during the pandemic contributed heavily to this correction across all
 
 Layoffs evolved gradually between 2020 and 2021 before increasing sharply in 2022 and reaching a major peak in 2023. Significant spikes appeared in late 2022, with 2023 recording the highest monthly layoff numbers across the entire period.
 
-![Layoff Trend Over Time](reports/figures/layoff_trend_timeline.png)
+![Layoff Trend Over Time](report/layoffs_trend.png)
 
 ---
 
